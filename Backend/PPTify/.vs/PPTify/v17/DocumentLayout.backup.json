@@ -1,53 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\",
+  "WorkspaceRootPath": "D:\\PPTify\\Backend\\PPTify\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\api\\pptify.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|solutionrelative:src\\api\\pptify.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\pptify\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|solutionrelative:src\\domain\\pptify.domain\\entities\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\api\\pptify.api\\pptify.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|solutionrelative:src\\api\\pptify.api\\pptify.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\pptify\\backend\\pptify\\src\\domain\\pptify.domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|solutionrelative:src\\domain\\pptify.domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|solutionrelative:src\\domain\\pptify.domain\\entities\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|solutionrelative:src\\domain\\pptify.domain\\entities\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|solutionrelative:src\\domain\\pptify.domain\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\pptify\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|solutionrelative:src\\domain\\pptify.domain\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69BBAD86-1925-4DA4-953D-B8FBAFFC2632}|src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\infrastructure\\pptify.infrastructure\\persistence\\dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\pptify\\backend\\pptify\\src\\api\\pptify.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|solutionrelative:src\\api\\pptify.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\pptify\\backend\\pptify\\src\\api\\pptify.api\\pptify.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|solutionrelative:src\\api\\pptify.api\\pptify.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\pptify\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|solutionrelative:src\\domain\\pptify.domain\\entities\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\pptify\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|solutionrelative:src\\domain\\pptify.domain\\entities\\auditlogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\pptify\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|solutionrelative:src\\domain\\pptify.domain\\entities\\userpreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BBAD86-1925-4DA4-953D-B8FBAFFC2632}|src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj|d:\\pptify\\backend\\pptify\\src\\infrastructure\\pptify.infrastructure\\persistence\\dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BBAD86-1925-4DA4-953D-B8FBAFFC2632}|src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj|solutionrelative:src\\infrastructure\\pptify.infrastructure\\persistence\\dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69BBAD86-1925-4DA4-953D-B8FBAFFC2632}|src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\infrastructure\\pptify.infrastructure\\authentication\\jwt\\pptify_token_generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69BBAD86-1925-4DA4-953D-B8FBAFFC2632}|src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj|d:\\pptify\\backend\\pptify\\src\\infrastructure\\pptify.infrastructure\\authentication\\jwt\\pptify_token_generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BBAD86-1925-4DA4-953D-B8FBAFFC2632}|src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj|solutionrelative:src\\infrastructure\\pptify.infrastructure\\authentication\\jwt\\pptify_token_generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\api\\pptify.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\pptify\\backend\\pptify\\src\\api\\pptify.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|solutionrelative:src\\api\\pptify.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\api\\pptify.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\pptify\\backend\\pptify\\src\\api\\pptify.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|solutionrelative:src\\api\\pptify.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69BBAD86-1925-4DA4-953D-B8FBAFFC2632}|src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\infrastructure\\pptify.infrastructure\\pptify.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{69BBAD86-1925-4DA4-953D-B8FBAFFC2632}|src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj|d:\\pptify\\backend\\pptify\\src\\infrastructure\\pptify.infrastructure\\pptify.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{69BBAD86-1925-4DA4-953D-B8FBAFFC2632}|src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj|solutionrelative:src\\infrastructure\\pptify.infrastructure\\pptify.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\ai-based-powerpoint-generator\\backend\\pptify\\src\\api\\pptify.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\pptify\\backend\\pptify\\src\\api\\pptify.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|solutionrelative:src\\api\\pptify.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -58,93 +66,112 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuditLogs.cs",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\AuditLogs.cs",
-              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Entities\\AuditLogs.cs",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\AuditLogs.cs",
-              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\AuditLogs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserCredentials.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\UserCredentials.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Entities\\UserCredentials.cs",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\UserCredentials.cs",
+              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\UserCredentials.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:30:31.789Z",
+              "WhenOpened": "2025-04-01T10:49:11.599Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserPreferences.cs",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\UserPreferences.cs",
-              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Entities\\UserPreferences.cs",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\UserPreferences.cs",
-              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\UserPreferences.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:30:25.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Users.cs",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\Users.cs",
-              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Entities\\Users.cs",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\Users.cs",
-              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:30:24.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T10:42:06.451Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\DbContexts\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\DbContexts\\AppDbContext.cs",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\DbContexts\\AppDbContext.cs",
-              "RelativeToolTip": "src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\DbContexts\\AppDbContext.cs",
+              "Title": "AuditLogs.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\AuditLogs.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Entities\\AuditLogs.cs",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\AuditLogs.cs",
+              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\AuditLogs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:30:13.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Entities.cs",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\Entities.cs",
-              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Entities\\Entities.cs",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\Entities.cs",
-              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\Entities.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:12:59.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T08:30:31.789Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PPTify_Token_Generator.cs",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\Authentication\\Jwt\\PPTify_Token_Generator.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\PPTify.Infrastructure\\Authentication\\Jwt\\PPTify_Token_Generator.cs",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\Authentication\\Jwt\\PPTify_Token_Generator.cs",
-              "RelativeToolTip": "src\\Infrastructure\\PPTify.Infrastructure\\Authentication\\Jwt\\PPTify_Token_Generator.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Title": "UserPreferences.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\UserPreferences.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Entities\\UserPreferences.cs",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\UserPreferences.cs",
+              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\UserPreferences.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T06:31:21.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T08:30:25.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\Users.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Entities\\Users.cs",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\Users.cs",
+              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:30:24.266Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\DbContexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\DbContexts\\AppDbContext.cs",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\DbContexts\\AppDbContext.cs",
+              "RelativeToolTip": "src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\DbContexts\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:30:13.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Entities.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\Entities.cs",
+              "RelativeDocumentMoniker": "src\\Domain\\PPTify.Domain\\Entities\\Entities.cs",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Domain\\PPTify.Domain\\Entities\\Entities.cs",
+              "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\Entities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:12:59.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PPTify_Token_Generator.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\Authentication\\Jwt\\PPTify_Token_Generator.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\PPTify.Infrastructure\\Authentication\\Jwt\\PPTify_Token_Generator.cs",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\Authentication\\Jwt\\PPTify_Token_Generator.cs",
+              "RelativeToolTip": "src\\Infrastructure\\PPTify.Infrastructure\\Authentication\\Jwt\\PPTify_Token_Generator.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T06:31:21.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\appsettings.json",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\appsettings.json",
               "RelativeDocumentMoniker": "src\\Api\\PPTify.Api\\appsettings.json",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\appsettings.json",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\appsettings.json",
               "RelativeToolTip": "src\\Api\\PPTify.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -152,37 +179,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Program.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Program.cs",
               "RelativeDocumentMoniker": "src\\Api\\PPTify.Api\\Program.cs",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Program.cs*",
-              "RelativeToolTip": "src\\Api\\PPTify.Api\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Program.cs",
+              "RelativeToolTip": "src\\Api\\PPTify.Api\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:08:52.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T13:08:52.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PPTify.Api.csproj",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\PPTify.Api.csproj",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\PPTify.Api.csproj",
               "RelativeDocumentMoniker": "src\\Api\\PPTify.Api\\PPTify.Api.csproj",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\PPTify.Api.csproj",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\PPTify.Api.csproj",
               "RelativeToolTip": "src\\Api\\PPTify.Api\\PPTify.Api.csproj",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T12:57:34.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T12:57:34.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Properties\\launchSettings.json",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "src\\Api\\PPTify.Api\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Properties\\launchSettings.json",
               "RelativeToolTip": "src\\Api\\PPTify.Api\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -190,11 +215,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Controllers\\UserController.cs",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "src\\Api\\PPTify.Api\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Controllers\\UserController.cs",
               "RelativeToolTip": "src\\Api\\PPTify.Api\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -202,16 +227,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "PPTify.Infrastructure.csproj",
-              "DocumentMoniker": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj",
               "RelativeDocumentMoniker": "src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj",
-              "ToolTip": "D:\\AI-Based-PowerPoint-Generator\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj",
+              "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj",
               "RelativeToolTip": "src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T12:52:46.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T12:52:46.483Z"
             }
           ]
         }

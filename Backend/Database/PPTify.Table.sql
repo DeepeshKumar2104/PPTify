@@ -1,9 +1,21 @@
-CREATE DATABASE PPTify;
+drop database PPTify;
+CREATE DATABASE IF NOT EXISTS PPTify;
 USE PPTify;
 
--- Users Table
+-- User Credentials Table (Now primary)
+CREATE TABLE user_credentials (
+    user_id CHAR(36) PRIMARY KEY, -- PRIMARY KEY
+    password_hash VARCHAR(255) NOT NULL,
+    two_factor_secret VARCHAR(512),
+    password_reset_token VARCHAR(255),
+    reset_token_expiry TIMESTAMP,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Users Table (now secondary)
 CREATE TABLE users (
-    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id CHAR(36) PRIMARY KEY,
     email VARCHAR(255) UNIQUE NOT NULL,
     full_name VARCHAR(255) NOT NULL,
     role ENUM('admin', 'user') DEFAULT 'user',
@@ -13,38 +25,26 @@ CREATE TABLE users (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     is_active BOOLEAN DEFAULT TRUE,
     last_login_at TIMESTAMP,
-    is_email_verified BOOLEAN DEFAULT FALSE
-);
-
--- User Credentials Table
-CREATE TABLE user_credentials (
-    credential_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    password_hash VARCHAR(255) NOT NULL,
-    two_factor_secret VARCHAR(512),
-    password_reset_token VARCHAR(255),
-    reset_token_expiry TIMESTAMP,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
+    is_email_verified BOOLEAN DEFAULT FALSE,
+    FOREIGN KEY (user_id) REFERENCES user_credentials(user_id)
 );
 
 -- Presentations Table
 CREATE TABLE presentations (
-    presentation_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
+    presentation_id CHAR(36) PRIMARY KEY DEFAULT (UUID()),
+    user_id CHAR(36) NOT NULL,
     file_url VARCHAR(255) NOT NULL,
     status ENUM('pending', 'in_progress', 'completed', 'failed') DEFAULT 'pending',
     version INT DEFAULT 1,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
+    FOREIGN KEY (user_id) REFERENCES user_credentials(user_id)
 );
 
 -- Tasks Table
 CREATE TABLE tasks (
-    task_id INT AUTO_INCREMENT PRIMARY KEY,
-    presentation_id INT NOT NULL,
+    task_id CHAR(36) PRIMARY KEY DEFAULT (UUID()),
+    presentation_id CHAR(36) NOT NULL,
     task_status ENUM('queued', 'in_progress', 'completed', 'failed') DEFAULT 'queued',
     result LONGTEXT,
     started_at TIMESTAMP,
@@ -57,19 +57,19 @@ CREATE TABLE tasks (
 
 -- Auth Tokens Table
 CREATE TABLE auth_tokens (
-    token_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
+    token_id CHAR(36) PRIMARY KEY DEFAULT (UUID()),
+    user_id CHAR(36) NOT NULL,
     token VARCHAR(512) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     expires_at TIMESTAMP NOT NULL,
     revoked BOOLEAN DEFAULT FALSE,
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
+    FOREIGN KEY (user_id) REFERENCES user_credentials(user_id)
 );
 
 -- Audit Logs Table
 CREATE TABLE audit_logs (
-    log_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
+    log_id CHAR(36) PRIMARY KEY DEFAULT (UUID()),
+    user_id CHAR(36) NOT NULL,
     action_type VARCHAR(255) NOT NULL,
     action_details TEXT,
     log_level ENUM('INFO', 'WARNING', 'ERROR') DEFAULT 'INFO',
@@ -77,28 +77,28 @@ CREATE TABLE audit_logs (
     ip_address VARCHAR(50),
     user_agent VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
+    FOREIGN KEY (user_id) REFERENCES user_credentials(user_id)
 );
 
 -- User Preferences Table
 CREATE TABLE user_preferences (
-    preference_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
+    preference_id CHAR(36) PRIMARY KEY DEFAULT (UUID()),
+    user_id CHAR(36) NOT NULL,
     theme VARCHAR(50) DEFAULT 'light',
     language VARCHAR(50) DEFAULT 'en',
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
+    FOREIGN KEY (user_id) REFERENCES user_credentials(user_id)
 );
 
 -- Presentation History Table
 CREATE TABLE presentation_history (
-    history_id INT AUTO_INCREMENT PRIMARY KEY,
-    presentation_id INT NOT NULL,
+    history_id CHAR(36) PRIMARY KEY DEFAULT (UUID()),
+    presentation_id CHAR(36) NOT NULL,
     change_type ENUM('created', 'updated', 'deleted') NOT NULL,
-    changed_by INT NOT NULL,
+    changed_by CHAR(36) NOT NULL,
     change_details TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (presentation_id) REFERENCES presentations(presentation_id),
-    FOREIGN KEY (changed_by) REFERENCES users(user_id)
+    FOREIGN KEY (changed_by) REFERENCES user_credentials(user_id)
 );
 
 -- Indexes
