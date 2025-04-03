@@ -23,5 +23,5 @@ public partial class AuditLogs
 
     public DateTime? CreatedAt { get; set; }
 
-    public virtual UserCredentials User { get; set; } = null!;
+    public virtual Users User { get; set; } = null!;
 }

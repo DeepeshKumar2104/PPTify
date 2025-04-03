@@ -13,5 +13,5 @@ public partial class UserPreferences
 
     public string? Language { get; set; }
 
-    public virtual UserCredentials User { get; set; } = null!;
+    public virtual Users User { get; set; } = null!;
 }

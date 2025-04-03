@@ -27,5 +27,15 @@ public partial class Users
 
     public bool? IsEmailVerified { get; set; }
 
-    public virtual UserCredentials User { get; set; } = null!;
+    public virtual ICollection<AuditLogs> AuditLogs { get; set; } = new List<AuditLogs>();
+
+    public virtual ICollection<AuthTokens> AuthTokens { get; set; } = new List<AuthTokens>();
+
+    public virtual ICollection<PresentationHistory> PresentationHistory { get; set; } = new List<PresentationHistory>();
+
+    public virtual ICollection<Presentations> Presentations { get; set; } = new List<Presentations>();
+
+    public virtual UserCredentials? UserCredentials { get; set; }
+
+    public virtual ICollection<UserPreferences> UserPreferences { get; set; } = new List<UserPreferences>();
 }

@@ -17,7 +17,7 @@ public partial class PresentationHistory
 
     public DateTime? CreatedAt { get; set; }
 
-    public virtual UserCredentials ChangedByNavigation { get; set; } = null!;
+    public virtual Users ChangedByNavigation { get; set; } = null!;
 
     public virtual Presentations Presentation { get; set; } = null!;
 }

@@ -23,5 +23,5 @@ public partial class Presentations
 
     public virtual ICollection<Tasks> Tasks { get; set; } = new List<Tasks>();
 
-    public virtual UserCredentials User { get; set; } = null!;
+    public virtual Users User { get; set; } = null!;
 }

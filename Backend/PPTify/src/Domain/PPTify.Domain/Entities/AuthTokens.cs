@@ -17,5 +17,5 @@ public partial class AuthTokens
 
     public bool? Revoked { get; set; }
 
-    public virtual UserCredentials User { get; set; } = null!;
+    public virtual Users User { get; set; } = null!;
 }

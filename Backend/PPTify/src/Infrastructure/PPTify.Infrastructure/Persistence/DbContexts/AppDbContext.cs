@@ -70,7 +70,6 @@ public partial class AppDbContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.AuditLogs)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("audit_logs_ibfk_1");
         });
 
@@ -102,7 +101,6 @@ public partial class AppDbContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.AuthTokens)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("auth_tokens_ibfk_1");
         });
 
@@ -132,12 +130,10 @@ public partial class AppDbContext : DbContext
 
             entity.HasOne(d => d.ChangedByNavigation).WithMany(p => p.PresentationHistory)
                 .HasForeignKey(d => d.ChangedBy)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("presentation_history_ibfk_2");
 
             entity.HasOne(d => d.Presentation).WithMany(p => p.PresentationHistory)
                 .HasForeignKey(d => d.PresentationId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("presentation_history_ibfk_1");
         });
 
@@ -173,7 +169,6 @@ public partial class AppDbContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Presentations)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("presentations_ibfk_1");
         });
 
@@ -211,7 +206,6 @@ public partial class AppDbContext : DbContext
 
             entity.HasOne(d => d.Presentation).WithMany(p => p.Tasks)
                 .HasForeignKey(d => d.PresentationId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("tasks_ibfk_1");
         });
 
@@ -221,7 +215,9 @@ public partial class AppDbContext : DbContext
 
             entity.ToTable("user_credentials");
 
-            entity.Property(e => e.UserId).HasColumnName("user_id");
+            entity.Property(e => e.UserId)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("user_id");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp")
@@ -243,6 +239,10 @@ public partial class AppDbContext : DbContext
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp")
                 .HasColumnName("updated_at");
+
+            entity.HasOne(d => d.User).WithOne(p => p.UserCredentials)
+                .HasForeignKey<UserCredentials>(d => d.UserId)
+                .HasConstraintName("user_credentials_ibfk_1");
         });
 
         modelBuilder.Entity<UserPreferences>(entity =>
@@ -266,7 +266,6 @@ public partial class AppDbContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.UserPreferences)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("user_preferences_ibfk_1");
         });
 
@@ -278,9 +277,7 @@ public partial class AppDbContext : DbContext
 
             entity.HasIndex(e => e.Email, "email").IsUnique();
 
-            entity.Property(e => e.UserId)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("user_id");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp")
@@ -313,11 +310,6 @@ public partial class AppDbContext : DbContext
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp")
                 .HasColumnName("updated_at");
-
-            entity.HasOne(d => d.User).WithOne(p => p.Users)
-                .HasForeignKey<Users>(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("users_ibfk_1");
         });
 
         OnModelCreatingPartial(modelBuilder);
