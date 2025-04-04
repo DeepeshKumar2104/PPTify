@@ -222,6 +222,9 @@ public partial class AppDbContext : DbContext
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp")
                 .HasColumnName("created_at");
+            entity.Property(e => e.LastLoginAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("last_login_at");
             entity.Property(e => e.PasswordHash)
                 .HasMaxLength(255)
                 .HasColumnName("password_hash");
@@ -292,9 +295,6 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.IsEmailVerified)
                 .HasDefaultValueSql("'0'")
                 .HasColumnName("is_email_verified");
-            entity.Property(e => e.LastLoginAt)
-                .HasColumnType("timestamp")
-                .HasColumnName("last_login_at");
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(20)
                 .HasColumnName("phone_number");

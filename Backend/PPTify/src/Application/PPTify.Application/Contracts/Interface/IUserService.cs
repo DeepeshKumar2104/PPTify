@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PPTify.Infrastructure.Persistence.Repositories
+namespace PPTify.Application.Contracts.Interface
 {
-    internal class UserCredentialsRespository
+    public interface IUserService
     {
+        Task<bool> RegisterUserAsync();
     }
 }

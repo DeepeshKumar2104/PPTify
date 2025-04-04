@@ -23,8 +23,6 @@ public partial class Users
 
     public bool? IsActive { get; set; }
 
-    public DateTime? LastLoginAt { get; set; }
-
     public bool? IsEmailVerified { get; set; }
 
     public virtual ICollection<AuditLogs> AuditLogs { get; set; } = new List<AuditLogs>();

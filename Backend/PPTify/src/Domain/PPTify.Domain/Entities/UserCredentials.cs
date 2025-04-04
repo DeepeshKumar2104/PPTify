@@ -15,6 +15,8 @@ public partial class UserCredentials
 
     public DateTime? ResetTokenExpiry { get; set; }
 
+    public DateTime? LastLoginAt { get; set; }
+
     public DateTime? CreatedAt { get; set; }
 
     public DateTime? UpdatedAt { get; set; }
