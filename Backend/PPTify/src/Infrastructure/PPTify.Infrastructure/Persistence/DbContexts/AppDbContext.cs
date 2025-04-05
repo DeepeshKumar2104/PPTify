@@ -280,6 +280,8 @@ public partial class AppDbContext : DbContext
 
             entity.HasIndex(e => e.Email, "email").IsUnique();
 
+            entity.HasIndex(e => e.UserUniqueId, "user_unique_id").IsUnique();
+
             entity.Property(e => e.UserId).HasColumnName("user_id");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
@@ -310,6 +312,9 @@ public partial class AppDbContext : DbContext
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp")
                 .HasColumnName("updated_at");
+            entity.Property(e => e.UserUniqueId)
+                .HasMaxLength(50)
+                .HasColumnName("user_unique_id");
         });
 
         OnModelCreatingPartial(modelBuilder);
