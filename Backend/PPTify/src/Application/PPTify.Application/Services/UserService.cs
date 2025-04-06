@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using PPTify.Application.Contracts.DTos;
 using PPTify.Application.Contracts.Interface;
 using PPTify.Application.Features.Handlers;
+using PPTify.Application.Models.RequestModels;
+using PPTify.Application.Models.ResponseModels;
 using PPTify.Domain.Interfaces;
 using PPTify.Infrastructure;
 
@@ -39,7 +41,7 @@ namespace PPTify.Application.Services
                 var usercred = new UserCredentials
                 {
                     UserId = user.UserId,
-                    PasswordHash = userdto.PasswordHash,
+                    PasswordHash = Bcypt.Net.Bcrypt.HashPassword(userdto.PasswordHash),
                 };
                 await unitofwork.UserCredentialRepository.AddAsync(usercred);
                 await unitofwork.SaveChangesAsync();
@@ -53,7 +55,16 @@ namespace PPTify.Application.Services
                 return false;
             }
         }
+        public async Task<ResponseModels> LoginUserAsync(LoginRequestModels loginrequest)
+        {
+            var user = await unitofwork.UserDetailRepository.GetAllAsync(
+                
 
-        
+                );
+
+        }
+
+
+
     }
 }

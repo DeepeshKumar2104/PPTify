@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Globalization;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
 
 namespace PPTify.Infrastructure.Authentication.Jwt
 {
@@ -18,39 +21,43 @@ namespace PPTify.Infrastructure.Authentication.Jwt
         {
             this.configuration = configuration;
         }
-        public  string GenerateToken(string username,string Email,string Role)
+        public string GenerateTokken(Users user)
         {
-
             var jwtsettings = configuration.GetSection("JwtSettings");
-            var issuer = jwtsettings["issuer"];
-            var audience = jwtsettings["audience"];
-            var secretKey = jwtsettings["secretkey"];
+            var issuer = jwtsettings["Issuer"];
+            var audience = jwtsettings["Audience"];
+            var security = jwtsettings["Secret"];
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
-            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            //    var claims = new[]
-            //    {
-            //    new Claim(JwtRegisteredClaimNames.Sub, username),
-            //    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            //    new Claim("role", "Admin"),
-            //    new Claim(ClaimTypes.Role,)
-            //};
-            var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.NameIdentifier, username),
-            new Claim(ClaimTypes.Role,Role)
+            if(string.IsNullOrEmpty(security))
+            {
+                throw new Exception("Secret Key is missing ");
+            }
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(security));
+            var cred = new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
 
-        };
-            var token = new JwtSecurityToken(
-                issuer: "PPTify",
-                audience: "PPTify",
+            // pay load
+
+            var claims = new List<Claim> 
+            {
+                new Claim(ClaimTypes.NameIdentifier,user.FullName),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.Role, user.Role),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
+
+            var tokken = new JwtSecurityToken 
+            (
+                issuer: issuer,
+                audience: audience,
                 claims: claims,
                 expires: DateTime.UtcNow.AddHours(1),
-                signingCredentials: credentials
+                signingCredentials: cred
             );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return new JwtSecurityTokenHandler().WriteToken(tokken);
+
         }
     }
+    
 }
