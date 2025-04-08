@@ -44,7 +44,7 @@ namespace PPTify.Application.Services
                 var usercred = new UserCredentials
                 {
                     UserId = user.UserId,
-                    PasswordHash = Bcrypt.Net.Bcrypt.HashPassword(userdto.PasswordHash),
+                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(userdto.PasswordHash),
                 };
                 await unitofwork.UserCredentialRepository.AddAsync(usercred);
                 await unitofwork.SaveChangesAsync();
@@ -94,13 +94,6 @@ namespace PPTify.Application.Services
             };
 
         }
-
-
-        private 
-
-
-
-
 
     }
 
