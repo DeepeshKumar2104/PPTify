@@ -10,6 +10,8 @@ using PPTify.Application.Models.RequestModels;
 using PPTify.Application.Models.ResponseModels;
 using PPTify.Domain.Interfaces;
 using PPTify.Infrastructure;
+using BCrypt.Net;
+using System.Reflection.Metadata.Ecma335;
 
 namespace PPTify.Application.Services
 {
@@ -17,6 +19,7 @@ namespace PPTify.Application.Services
     {
         private readonly IUnitofWork unitofwork;
 
+        
         public UserService(IUnitofWork unitofwork)
         {
             this.unitofwork = unitofwork;
@@ -41,7 +44,7 @@ namespace PPTify.Application.Services
                 var usercred = new UserCredentials
                 {
                     UserId = user.UserId,
-                    PasswordHash = Bcypt.Net.Bcrypt.HashPassword(userdto.PasswordHash),
+                    PasswordHash = Bcrypt.Net.Bcrypt.HashPassword(userdto.PasswordHash),
                 };
                 await unitofwork.UserCredentialRepository.AddAsync(usercred);
                 await unitofwork.SaveChangesAsync();
@@ -57,14 +60,48 @@ namespace PPTify.Application.Services
         }
         public async Task<ResponseModels> LoginUserAsync(LoginRequestModels loginrequest)
         {
-            var user = await unitofwork.UserDetailRepository.GetAllAsync(
-                
+            var user = (await unitofwork.UserDetailRepository.GetAllAsync())
+                .FirstOrDefault(u => u.Email == loginrequest.Email);
 
-                );
+            var credentials = (await unitofwork.UserCredentialRepository.GetAllAsync())
+                .FirstOrDefault(cred => cred.UserId == user.UserId);
+
+            if(user is null || credentials is null)
+            {
+                return new ResponseModels 
+                { 
+                    Token = null,
+                    Message = "User details not found",
+                    Email = loginrequest.Email,
+                };
+            }
+
+            if(credentials.PasswordHash != loginrequest.Password)
+            {
+                return new ResponseModels 
+                {
+                    Message = $"Password is incorrect with the associated {loginrequest.Email}",
+                    Email = loginrequest.Email,
+                };
+            }
+            //var tokken = GenerateTokken(user);
+            return new ResponseModels 
+            { 
+                Message= "Login Successfully",
+                Token = "Deepesh",
+                FullName = user.FullName,
+                Email = loginrequest.Email,
+            };
 
         }
 
 
+        private 
+
+
+
+
 
     }
+
 }
