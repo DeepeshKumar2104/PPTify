@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PPTify.Application.Contracts.DTos;
 using PPTify.Application.Contracts.Interface;
+using PPTify.Application.Models.RequestModels;
 
 namespace PPTify.Api.Controllers
 {
@@ -25,7 +26,7 @@ namespace PPTify.Api.Controllers
             var result = await userService.RegisterUserAsync(userdto);
             if (result)
             {
-                return Ok(new {message = "User registered successfully " });
+                return Ok(new { message = "User registered successfully " });
             }
             else if (result == false)
             {
@@ -34,6 +35,24 @@ namespace PPTify.Api.Controllers
             else
             {
                 return StatusCode(500, "Internal server error");
+            }
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> LoginUser([FromBody] LoginRequestModels loginrequest)
+        {
+            if (loginrequest == null)
+            {
+                return BadRequest("Login request is null");
+            }
+            var result = await userService.LoginUserAsync(loginrequest);
+            if (result.Token != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return Unauthorized(new { message = result.Message });
             }
         }
     }

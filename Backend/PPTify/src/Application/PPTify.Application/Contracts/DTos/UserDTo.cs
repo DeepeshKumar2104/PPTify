@@ -14,6 +14,8 @@ namespace PPTify.Application.Contracts.DTos
         public string? ProfilePictureUrl { get; set; } 
         public string? PhoneNumber { get; set; }
         public bool? IsEmailVerified { get; set; }
-        public string PasswordHash { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+
+
     }
 }

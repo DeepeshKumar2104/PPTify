@@ -12,17 +12,19 @@ using PPTify.Domain.Interfaces;
 using PPTify.Infrastructure;
 using BCrypt.Net;
 using System.Reflection.Metadata.Ecma335;
+using PPTify.Application.Features.Helper.Jwt;
 
 namespace PPTify.Application.Services
 {
     public class UserService : IUserService
     {
         private readonly IUnitofWork unitofwork;
+        private readonly GenerateTokken tokken;
 
-        
-        public UserService(IUnitofWork unitofwork)
+        public UserService(IUnitofWork unitofwork,GenerateTokken tokken)
         {
             this.unitofwork = unitofwork;
+            this.tokken = tokken;
         }
         UserUniqueIdentificationNumber userUniqueIdentificationNumber = new UserUniqueIdentificationNumber();   
 
@@ -44,7 +46,7 @@ namespace PPTify.Application.Services
                 var usercred = new UserCredentials
                 {
                     UserId = user.UserId,
-                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(userdto.PasswordHash),
+                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(userdto.Password),
                 };
                 await unitofwork.UserCredentialRepository.AddAsync(usercred);
                 await unitofwork.SaveChangesAsync();
@@ -76,7 +78,7 @@ namespace PPTify.Application.Services
                 };
             }
 
-            if(credentials.PasswordHash != loginrequest.Password)
+            if(BCrypt.Net.BCrypt.Verify(loginrequest.Password, credentials.PasswordHash))
             {
                 return new ResponseModels 
                 {
@@ -84,11 +86,12 @@ namespace PPTify.Application.Services
                     Email = loginrequest.Email,
                 };
             }
-            //var tokken = GenerateTokken(user);
+            
+            var generatedtokken = tokken.Generate_Tokken(user);
             return new ResponseModels 
             { 
-                Message= "Login Successfully",
-                Token = "Deepesh",
+                Message= "User Login Successfully",
+                Token = generatedtokken,
                 FullName = user.FullName,
                 Email = loginrequest.Email,
             };
