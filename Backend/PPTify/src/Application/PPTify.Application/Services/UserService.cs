@@ -78,7 +78,7 @@ namespace PPTify.Application.Services
                 };
             }
 
-            if(BCrypt.Net.BCrypt.Verify(loginrequest.Password, credentials.PasswordHash))
+            if(!BCrypt.Net.BCrypt.Verify(loginrequest.Password, credentials.PasswordHash))
             {
                 return new ResponseModels 
                 {

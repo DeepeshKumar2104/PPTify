@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\PPTify\\Backend\\PPTify\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\pptify\\backend\\pptify\\src\\api\\pptify.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|solutionrelative:src\\api\\pptify.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFCC1C43-07FB-420C-BF31-26083078D7A5}|src\\Application\\PPTify.Application\\PPTify.Application.csproj|d:\\pptify\\backend\\pptify\\src\\application\\pptify.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFCC1C43-07FB-420C-BF31-26083078D7A5}|src\\Application\\PPTify.Application\\PPTify.Application.csproj|solutionrelative:src\\application\\pptify.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|d:\\pptify\\backend\\pptify\\src\\api\\pptify.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331FFC28-C64F-46ED-B2DA-4B10B1337B4C}|src\\Api\\PPTify.Api\\PPTify.Api.csproj|solutionrelative:src\\api\\pptify.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{238F7F7D-39E5-485C-B886-FBC5A7FBC9CC}|src\\Domain\\PPTify.Domain\\PPTify.Domain.csproj|d:\\pptify\\backend\\pptify\\src\\domain\\pptify.domain\\entities\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,7 +117,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -129,8 +129,7 @@
               "RelativeToolTip": "src\\Application\\PPTify.Application\\Models\\RequestModels\\UserRequestModels.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:01:53.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:01:53.064Z"
             },
             {
               "$type": "Document",
@@ -142,12 +141,11 @@
               "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Interfaces\\IGenricRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T05:29:07.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T05:29:07.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Api\\PPTify.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "src\\Api\\PPTify.Api\\Controllers\\UserController.cs",
@@ -168,8 +166,7 @@
               "RelativeToolTip": "src\\Api\\PPTify.Api\\Program.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAuwCAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:08:52.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T13:08:52.62Z"
             },
             {
               "$type": "Document",
@@ -181,8 +178,7 @@
               "RelativeToolTip": "src\\Application\\PPTify.Application\\Contracts\\Interface\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:20:37.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T07:20:37.569Z"
             },
             {
               "$type": "Document",
@@ -194,8 +190,7 @@
               "RelativeToolTip": "src\\Application\\PPTify.Application\\Contracts\\DTos\\UserDTo.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:28:15.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T07:28:15.463Z"
             },
             {
               "$type": "Document",
@@ -207,18 +202,17 @@
               "RelativeToolTip": "src\\Api\\PPTify.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T13:11:23.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T13:11:23.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\PPTify\\Backend\\PPTify\\src\\Application\\PPTify.Application\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "src\\Application\\PPTify.Application\\Services\\UserService.cs",
               "ToolTip": "D:\\PPTify\\Backend\\PPTify\\src\\Application\\PPTify.Application\\Services\\UserService.cs*",
               "RelativeToolTip": "src\\Application\\PPTify.Application\\Services\\UserService.cs*",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAawGIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAE0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T05:56:07.641Z",
               "EditorCaption": ""
@@ -233,8 +227,7 @@
               "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\UserCredentials.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:49:11.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T10:49:11.599Z"
             },
             {
               "$type": "Document",
@@ -246,8 +239,7 @@
               "RelativeToolTip": "src\\Application\\PPTify.Application\\Models\\RequestModels\\LoginRequestModels.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:02:08.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:02:08.612Z"
             },
             {
               "$type": "Document",
@@ -259,8 +251,7 @@
               "RelativeToolTip": "src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\Repositories\\GenericRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:25:09.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T06:25:09.424Z"
             },
             {
               "$type": "Document",
@@ -272,8 +263,7 @@
               "RelativeToolTip": "src\\Application\\PPTify.Application\\Features\\Helper\\Jwt\\GenerateTokken.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:17:11.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:17:11.623Z"
             },
             {
               "$type": "Document",
@@ -285,8 +275,7 @@
               "RelativeToolTip": "src\\Application\\PPTify.Application\\Models\\ResponseModels\\ResponseModels.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:16:07.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:16:07.476Z"
             },
             {
               "$type": "Document",
@@ -298,8 +287,7 @@
               "RelativeToolTip": "src\\Application\\PPTify.Application\\PPTify.Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-06T11:26:33.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:26:33.6Z"
             },
             {
               "$type": "Document",
@@ -309,8 +297,7 @@
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAEMHAAAAAAAAAAAkwFYHAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-04-06T11:27:11.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:27:11.669Z"
             },
             {
               "$type": "Document",
@@ -322,8 +309,7 @@
               "RelativeToolTip": "src\\Application\\PPTify.Application\\Features\\Handlers\\UserUniqueIdentificationNumber.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwBcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T10:17:16.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T10:17:16.1Z"
             },
             {
               "$type": "Document",
@@ -335,8 +321,7 @@
               "RelativeToolTip": "src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\Repositories\\UnitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:53:18.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T06:53:18.994Z"
             },
             {
               "$type": "Document",
@@ -348,8 +333,7 @@
               "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\UserPreferences.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:30:25.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T08:30:25.311Z"
             },
             {
               "$type": "Document",
@@ -361,8 +345,7 @@
               "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\AuditLogs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:30:31.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T08:30:31.789Z"
             },
             {
               "$type": "Document",
@@ -374,8 +357,7 @@
               "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Entities\\Users.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAUwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:30:24.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T08:30:24.266Z"
             },
             {
               "$type": "Document",
@@ -387,8 +369,7 @@
               "RelativeToolTip": "src\\Application\\PPTify.Application\\Contracts\\DTos\\UserCredentialDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:30:32.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T07:30:32.219Z"
             },
             {
               "$type": "Document",
@@ -400,8 +381,7 @@
               "RelativeToolTip": "src\\Domain\\PPTify.Domain\\Interfaces\\IUnitofWork.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAIBJwBAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:49:19.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T06:49:19.686Z"
             },
             {
               "$type": "Document",
@@ -413,8 +393,7 @@
               "RelativeToolTip": "src\\Infrastructure\\PPTify.Infrastructure\\Persistence\\DbContexts\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:30:13.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T08:30:13.421Z"
             },
             {
               "$type": "Document",
@@ -437,8 +416,7 @@
               "RelativeToolTip": "src\\Api\\PPTify.Api\\PPTify.Api.csproj",
               "ViewState": "AgIAAAEAAAAAAAAAAABBwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T12:57:34.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T12:57:34.321Z"
             },
             {
               "$type": "Document",
@@ -450,8 +428,7 @@
               "RelativeToolTip": "src\\Api\\PPTify.Api\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T13:11:29.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T13:11:29.847Z"
             },
             {
               "$type": "Document",
@@ -463,8 +440,7 @@
               "RelativeToolTip": "src\\Infrastructure\\PPTify.Infrastructure\\PPTify.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T12:52:46.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T12:52:46.483Z"
             }
           ]
         }
